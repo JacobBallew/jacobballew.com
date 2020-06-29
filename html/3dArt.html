@@ -3,16 +3,13 @@
 
 <head>
     <title>Jacob Ballew.com</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <style>
-        /* General Styling */
-        
         body {
             font-family: 'Roboto', sans-serif;
-            padding: 20px 40px 40px 40px;
+            padding: 20px 30px 30px 30px;
         }
-        /* ============== Site Header / Logo ============== */
         
         #logo_header {
             background-color: #0D0D0D;
@@ -20,35 +17,26 @@
             color: white;
             font-size: 28px;
         }
-        /* ============== Site Navigation ============== */
         
-        .navigation {
-            background-color: #0D0D0D;
-            padding: 10px;
-            color: white;
-            padding: 10px;
+        #logo_header hr {
+            padding: 0;
+            margin: 0;
         }
         
-        .navigation p {
+        #logo_header p {
             font-size: 16px;
             display: inline;
             background-color: #0D0D0D;
-            padding: 10px;
+            padding: 5px;
             color: whitesmoke;
         }
         
-        .navigation p:hover {
+        #logo_header p:hover {
             cursor: pointer;
             background-color: #0583F2;
             color: black;
         }
-        
-        .navigation a {
-            text-decoration: none;
-            padding: 0px;
-            color: red;
-        }
-        /* ============== Parent Card Wrapper ============== */
+        /* Parent Card Wrapper */
         
         .content_card {
             background-color: darkblue;
@@ -110,15 +98,12 @@
 <body>
     <div id="logo_header">
         Jacob Ballew
-    </div>
-    <br>
-    <div class="navigation">
-        <p><a href="index.html">Welcome</a></p>
+        <hr>
+        <p><a href="../index.html">Welcome</a></p>
         &nbsp;
-        <p><a href="html/3dArt.html">3D Art</a></p>
+        <p><a href="../html/3dArt.html">3D Art</a></p>
     </div>
 
-    <br>
     <div class="content_card">
         <!-- Card header -->
         <h4>About me</h4>
@@ -131,78 +116,6 @@
         </div>
     </div>
 
-    <br>
-    <div class="content_card">
-        <!-- Card header -->
-        <h4>Technologies Known</h4>
-        <!-- Card content -->
-        <div class="content_card_content">
-
-            <div id="technologies_known">
-                <!-- 1st entry -->
-                <table>
-                    <tr>
-                        <th>Languages</th>
-                    </tr>
-                    <td>
-                        <p>Java &emsp; Scala &emsp; Python &emsp; C</p>
-                    </td>
-                </table>
-
-                <!-- 2nd Section -->
-                <table>
-                    <tr>
-                        <th>Web Development</th>
-                        <th>Frameworks</th>
-                        <th>Databases</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>HTML/CSS &emsp; Javascript &emsp; React &emsp; BootStrap</p>
-                        </td>
-                        <td>
-                            <p>Spring and Spring Boot</p>
-                        </td>
-                        <td>
-                            <p>SQL Servers &emsp; HBase &emsp; Hive</p>
-                        </td>
-                    </tr>
-                </table>
-
-                <!-- 3rd Section -->
-                <table>
-                    <tr>
-                        <th>DevOps</th>
-                        <th>Cloud Technologies</th>
-                        <th>Big Data</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Jenkins &emsp; Nexus Repos</p>
-                        </td>
-                        <td>
-                            <p>Amazon Web Services &emsp; Docker &emsp; Digital Ocean</p>
-                        </td>
-                        <td>
-                            <p>Hadoop &emsp; Spark &emsp; TeZ &emsp; Hive</p>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-
-    <br>
-    <div class="content_card">
-        <!-- Card header -->
-        <h4>Projects</h4>
-        <!-- Card content -->
-        <div class="content_card_content">
-            <ul>
-                <li>Java</li>
-            </ul>
-        </div>
-    </div>
 
 
 </body>
