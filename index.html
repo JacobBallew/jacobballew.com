@@ -1,210 +1,64 @@
-<!DOCTYPE html>
 <html>
 
 <head>
-    <title>Jacob Ballew.com</title>
+    <title>Site Under Construction</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <style>
-        /* General Styling */
-        
         body {
             font-family: 'Roboto', sans-serif;
-            padding: 20px 40px 40px 40px;
-        }
-        /* ============== Site Header / Logo ============== */
-        
-        #logo_header {
-            background-color: #0D0D0D;
-            padding: 10px;
-            color: white;
-            font-size: 28px;
-        }
-        /* ============== Site Navigation ============== */
-        
-        .navigation {
-            background-color: #0D0D0D;
-            padding: 10px;
-            color: white;
-            padding: 10px;
+            background-color: whitesmoke;
         }
         
-        .navigation p {
-            font-size: 16px;
-            display: inline;
-            background-color: #0D0D0D;
-            padding: 10px;
-            color: whitesmoke;
-        }
-        
-        .navigation p:hover {
-            cursor: pointer;
-            background-color: #0583F2;
-            color: black;
-        }
-        
-        .navigation a {
-            text-decoration: none;
-            padding: 0px;
-            color: red;
-        }
-        /* ============== Parent Card Wrapper ============== */
-        
-        .content_card {
-            background-color: darkblue;
-            color: white;
-            border-radius: 25px;
-            background-image: linear-gradient(to bottom right, #0583F2, #0540F2);
+        .container {
+            background-color: white;
+            width: 50%;
+            /* 30 for moblie, 15 for full */
+            margin: auto;
+            margin-top: 5%;
+            padding: 35px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            font-size: 16px;
-        }
-        /* Card Header */
-        
-        .content_card h4 {
-            font-family: 'Roboto', sans-serif;
-            background-color: #0D0D0D;
-            color: white;
-            padding: 10px;
-        }
-        /* Content inside card itself */
-        
-        .content_card_content {
-            padding: 10px;
-        }
-        /* ============== Technologies Div ============== */
-        
-        #technologies_known {
-            padding: 0px;
-            padding-bottom: 20px;
         }
         
-        #technologies_known table {
-            width: 100%;
-            /* background-color: tomato; */
-            text-align: left;
-            border-spacing: 0;
+        .container img {
+            float: right;
         }
         
-        #technologies_known table th {
-            padding: 10px;
-            margin: 0px;
+        .container h1 {
+            float: left;
         }
         
-        #technologies_known table tr {
-            background-color: #0D0D0D;
+        .container p {
+            padding-top: 10px;
         }
         
-        #technologies_known table td {
-            background-color: #0583F2;
-            padding: 10px;
-            width: 33%;
-            /* font-weight: bold; */
-            border-left: 1px solid #0D0D0D;
-            border-right: 1px solid #0D0D0D;
-            border-bottom: 1px solid #0D0D0D;
+        .clr {
+            clear: both;
+        }
+        
+        @media only screen and (min-width: 768px) {
+            .container {
+                background-color: white;
+                width: 40%;
+                margin: auto;
+                margin-top: 5%;
+                padding: 35px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
         }
     </style>
-
 </head>
 
 <body>
-    <div id="logo_header">
-        Jacob Ballew
+    <div class="container">
+        <br>
+        <h1>Oh... hi there</h1>
+        <img src="images/icons/wrench.png" alt="under construction graphic" width="100" height="100">
+        <div class="clr"></div>
+        <hr>
+        <p>It looks like this site is currently under construction.<br>
+            <hr>Please check back later</p>
     </div>
-    <br>
-    <div class="navigation">
-        <p><a href="index.html">Welcome</a></p>
-        &nbsp;
-        <p><a href="html/3dArt.html">3D Art</a></p>
-    </div>
-
-    <br>
-    <div class="content_card">
-        <!-- Card header -->
-        <h4>About me</h4>
-        <!-- Card content -->
-        <div class="content_card_content">
-            <p><img src="images/testpic.png" alt="" style="width:170px;height:170px;margin-left:15px;border-radius: 50%;"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
-                ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br /> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
-        </div>
-    </div>
-
-    <br>
-    <div class="content_card">
-        <!-- Card header -->
-        <h4>Technologies Known</h4>
-        <!-- Card content -->
-        <div class="content_card_content">
-
-            <div id="technologies_known">
-                <!-- 1st entry -->
-                <table>
-                    <tr>
-                        <th>Languages</th>
-                    </tr>
-                    <td>
-                        <p>Java &emsp; Scala &emsp; Python &emsp; C</p>
-                    </td>
-                </table>
-
-                <!-- 2nd Section -->
-                <table>
-                    <tr>
-                        <th>Web Development</th>
-                        <th>Frameworks</th>
-                        <th>Databases</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>HTML/CSS &emsp; Javascript &emsp; React &emsp; BootStrap</p>
-                        </td>
-                        <td>
-                            <p>Spring and Spring Boot</p>
-                        </td>
-                        <td>
-                            <p>SQL Servers &emsp; HBase &emsp; Hive</p>
-                        </td>
-                    </tr>
-                </table>
-
-                <!-- 3rd Section -->
-                <table>
-                    <tr>
-                        <th>DevOps</th>
-                        <th>Cloud Technologies</th>
-                        <th>Big Data</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Jenkins &emsp; Nexus Repos</p>
-                        </td>
-                        <td>
-                            <p>Amazon Web Services &emsp; Docker &emsp; Digital Ocean</p>
-                        </td>
-                        <td>
-                            <p>Hadoop &emsp; Spark &emsp; TeZ &emsp; Hive</p>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-
-    <br>
-    <div class="content_card">
-        <!-- Card header -->
-        <h4>Projects</h4>
-        <!-- Card content -->
-        <div class="content_card_content">
-            <ul>
-                <li>Java</li>
-            </ul>
-        </div>
-    </div>
-
-
 </body>
 
 </html>
