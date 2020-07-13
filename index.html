@@ -24,26 +24,55 @@ body {
 
         <div class="custom-form">
 
-            <h2 class="title">Tell us what you are looking for</h2>
-            <form name="contact" method="POST" data-netlify="true" action="/form_success.html">
+            <h2 class="title">Careers</h2>
+            <p><b>Great careers start with Be Ali Homecare!</b> <br>Start your journey by providing the below
+                information.
+                Afterwards we will contact you with the next steps</p>
+            <br>
+            <form name="contact" method="POST" data-netlify="true" action="../html/success.html">
                 <!-- Input fields -->
                 <label for="fname">First name</label><br>
-                <input type="text" id="fname" name="fname" placeholder=""><br>
+                <input type="text" id="fname" name="fname" placeholder="" required><br>
 
                 <label for="lname">Last name</label><br>
-                <input type="text" id="lname" name="lname" placeholder=""><br>
-                
-                <label for="phoneNumber">Phone number</label><br>
-                <input type="text" id="phoneNumber" name="phoneNumber" placeholder=""><br>
-                
-                <label for="email">Email</label><br>
-                <input type="text" id="email" name="email" placeholder=""><br>
+                <input type="text" id="lname" name="lname" placeholder="" required><br>
 
+                <label for="phoneNumber">Phone number</label><br>
+                <input type="text" id="phoneNumber" name="phoneNumber" placeholder="" required><br>
+
+                <label for="email">Email</label><br>
+                <input type="text" id="email" name="email" placeholder="" required><br>
+
+                <label for="eduLevel">Highest Level of Education</label><br>
+                <select name="eduLevel" id="eduLevel" required>
+                    <option default>Select your highest level of education</option>
+                    <option value="hs">High School (or equivalent)</option>
+                    <option value="as">Associate Degree</option>
+                    <option value="bs">Bachelor Degree</option>
+                    <option value="eduOther">Other</option>
+                </select>
+
+                <label for="certification">Certifications</label><br>
+                <select name="certification" id="certification" required>
+                    <option default>Select relevant certification</option>
+                    <option value="cna">CNA - Certified Nursing Assistant</option>
+                    <option value="lpn">LPN - Licensed Practical Nurse</option>
+                    <option value="rn">RN - Registered Nurse</option>
+                    <option value="certOther">Other</option>
+                </select>
+
+                <label for="blsCertification">Are you BLS or CPR certified</label><br>
+                <select name="blsCertification" id="blsCertification" required>
+                    <option default></option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                
                 <!-- Text Area -->
-                <br><br>
+                <!-- <br><br>
                 <label for="description">What kind of services are you looking for</label><br>
-                <textarea name="message" rows="10" cols="30" placeholder=""></textarea>
-                <br><br>
+                <textarea name="message" rows="10" cols="30" placeholder="" required></textarea>
+                <br><br> -->
 
                 <!-- Submit -->
                 <input type="submit" value="Submit">
