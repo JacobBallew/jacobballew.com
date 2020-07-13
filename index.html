@@ -3,59 +3,50 @@
 <head>
     <title>Test Form</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom-form.css">
     <style>
-        body {}
 
+body {
+    background-color: tomato;
+}
         .global-wrapper {
-            background-color: tomato;
+            background-color: whitesmoke;
             width: 80%;
             margin: auto;
             color: white;
-            padding-top: 10%;
         }
 
-        form {
-            margin-left: 30%;
-        }
-
-        h1 {
-            margin-left: 30%;
-        }
     </style>
 </head>
 
 <body>
     <div class="global-wrapper">
 
-        <h1>Test Form</h1>
-        <form name="contact" method="POST" data-netlify="true" action="/form_success.html">
-            <!-- Input fields -->
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" value="John"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <div class="custom-form">
 
-            <!-- Drop Down -->
-            <label for="cars">Choose a car:</label>
-            <select id="cars" name="cars">
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="fiat">Fiat</option>
-                <option value="audi">Audi</option>
-            </select>
+            <h2 class="title">Tell us what you are looking for</h2>
+            <form name="contact" method="POST" data-netlify="true" action="/form_success.html">
+                <!-- Input fields -->
+                <label for="fname">First name</label><br>
+                <input type="text" id="fname" name="fname" placeholder=""><br>
+                <label for="lname">Last name</label><br>
+                <input type="text" id="lname" name="lname" placeholder=""><br>
+                <label for="lname">Phone number</label><br>
+                <input type="text" id="lname" name="lname" placeholder=""><br>
+                <label for="lname">Email</label><br>
+                <input type="text" id="lname" name="lname" placeholder=""><br>
 
-            <!-- Text Area -->
-            <br><br>
-            <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
-            <br><br>
+                <!-- Text Area -->
+                <br><br>
+                <label for="lname">What kind of services are you looking for</label><br>
+                <textarea name="message" rows="10" cols="30" placeholder=""></textarea>
+                <br><br>
 
-            <!-- Submit -->
-            <input type="submit" value="Submit">
+                <!-- Submit -->
+                <input type="submit" value="Submit">
+            </form>
+        </div>
 
-            <br><br>
-            <br><br>
-            <br><br>
-        </form>
     </div>
 </body>
 
