@@ -1,82 +1,65 @@
 <html>
 
 <head>
-    <title>Test Form</title>
+    <title>Site Under Construction</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/custom-form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <style>
-
-body {
-    background-color: tomato;
-}
-        .global-wrapper {
+        body {
+            font-family: 'Roboto', sans-serif;
             background-color: whitesmoke;
-            width: 80%;
-            margin: auto;
-            color: white;
         }
-
+        
+        .container {
+            background-color: white;
+            width: 90%;
+            /* 30 for moblie, 15 for full */
+            margin: auto;
+            margin-top: 5%;
+            padding: 35px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            font-size: 24;
+        }
+        
+        .container img {
+            float: right;
+        }
+        
+        .container h1 {
+            float: left;
+        }
+        
+        .container p {
+            padding-top: 10px;
+        }
+        
+        .clr {
+            clear: both;
+        }
+        
+        @media only screen and (min-width: 768px) {
+            .container {
+                background-color: white;
+                width: 40%;
+                margin: auto;
+                margin-top: 5%;
+                padding: 35px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+        }
     </style>
 </head>
 
 <body>
-    <div class="global-wrapper">
-
-        <div class="custom-form">
-
-            <h2 class="title">Test Form</h2>
-            <p><b>This is a test form</p>
-            <br>
-            <form name="Career-Application" method="POST" data-netlify="true">
-                <!-- Input fields -->
-                <label for="fname">First name</label><br>
-                <input type="text" id="fname" name="fname" placeholder="" required><br>
-
-                <label for="lname">Last name</label><br>
-                <input type="text" id="lname" name="lname" placeholder="" required><br>
-
-                <label for="phoneNumber">Phone number</label><br>
-                <input type="text" id="phoneNumber" name="phoneNumber" placeholder="" required><br>
-
-                <label for="email">Email</label><br>
-                <input type="text" id="email" name="email" placeholder="" required><br>
-
-                <label for="eduLevel">Highest Level of Education</label><br>
-                <select name="eduLevel" id="eduLevel" required>
-                    <option default>Select your highest level of education</option>
-                    <option value="High School or GED">High School (or equivalent)</option>
-                    <option value="Associate Degree">Associate Degree</option>
-                    <option value="Bachelor">Bachelor Degree</option>
-                    <option value="Other">Other</option>
-                </select>
-
-                <label for="certification">Certifications</label><br>
-                <select name="certification" id="certification" required>
-                    <option default>Select relevant certification</option>
-                    <option value="CNA">CNA - Certified Nursing Assistant</option>
-                    <option value="LPN">LPN - Licensed Practical Nurse</option>
-                    <option value="RN">RN - Registered Nurse</option>
-                    <option value="Other">Other</option>
-                </select>
-
-                <label for="blsCertification">Are you BLS or CPR certified</label><br>
-                <select name="blsCertification" id="blsCertification" required>
-                    <option default></option>
-                    <option value="YES">Yes</option>
-                    <option value="NO">No</option>
-                </select>
-                <br><br>
-                <!-- Text Area -->
-                <!-- <br><br>
-                <label for="description">What kind of services are you looking for</label><br>
-                <textarea name="message" rows="10" cols="30" placeholder="" required></textarea>
-                <br><br> -->
-
-                <!-- Submit -->
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-
+    <div class="container">
+        <br>
+        <h1>Oh... hi there</h1>
+        <img src="images/icons/wrench.png" alt="under construction graphic" width="100" height="100">
+        <div class="clr"></div>
+        <hr>
+        <p>It looks like this site is currently under construction.<br>
+            <hr>Please check back later</p>
     </div>
 </body>
 
