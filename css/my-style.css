@@ -1,0 +1,129 @@
+body {
+    background-color: #F2F2F2;
+    color           : #0D0D0D;
+    width           : 50%;
+    margin          : auto;
+    font-size       : 16px;
+    background      : #ECE9E6;
+    /* fallback for old browsers */
+    background      : -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background      : linear-gradient(to right, #FFFFFF, #ECE9E6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main-wrapper {
+    padding         : 1rem;
+    box-shadow      : 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-top-left-radius : 10px;
+    border-top-right-radius : 10px;
+    background-color: #fff;
+}
+
+.header {
+    text-align : center;
+    font-family: 'Roboto', sans-serif;
+    margin     : 2rem;
+}
+
+.main-nav {
+    margin       : auto;
+    text-align   : center;
+    width        : 100%;
+    padding      : 1rem;
+    border       : #F2F2F2 1px solid;
+    border-radius: 10px;
+    font-family  : 'Roboto', sans-serif;
+    margin-top   : 2rem;
+    margin-bottom: 2rem;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color          : #000;
+}
+
+.main-nav a:visited {
+    color: #000;
+}
+
+.main-nav a:hover {
+    text-decoration: none;
+    color          : #000;
+    font-weight    : bold;
+}
+
+#on-page {
+    font-weight: bold;
+}
+
+.icon-link {
+    float: right;
+}
+
+.std-content {
+
+    margin       : auto;
+    text-align   : center;
+    width        : 10 0%;
+    padding      : 4rem;
+    border       : #F2F2F2 1px solid;
+    border-radius: 10px;
+    line-height  : 200%;
+}
+
+img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width     : 80%;
+}
+
+.img-setup p {
+    text-align: center;
+    font-size : small;
+}
+
+.spacer-five {
+    margin-top: 4rem;
+}
+
+.footer {
+    background-color          : #0D0D0D;
+    box-shadow                : 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius : 10px;
+    border-bottom-right-radius: 10px;
+    color                     : #ECE9E6;
+    text-align                : center;
+    font-size                 : small;
+    padding                   : 1rem;
+}
+
+.footer p {
+    padding: 0;
+    margin : 0;
+}
+
+/* Moblie Devices */
+@media only screen and (max-width: 600px) {
+    body {
+        width: 100%;
+    }
+
+    .main-wrapper {
+        border-radius: 0;
+    }
+
+    img {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        width     : 100%;
+    }
+
+    .footer {
+        background-color          : #0D0D0D;
+        box-shadow                : 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 0;
+        color                     : #ECE9E6;
+        text-align                : center;
+        font-size                 : small;
+        padding                   : 1rem;
+    }
+}
