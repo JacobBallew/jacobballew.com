@@ -1,2 +1,2 @@
 # JacobBallew.com
-This is my personal portfoliasdklkksdfhfo
+This is my personal portfolio
